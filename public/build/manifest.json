@@ -1,0 +1,235 @@
+{
+  "_about_img-Cf9swsCT.js": {
+    "file": "assets/about_img-Cf9swsCT.js",
+    "name": "about_img",
+    "imports": [
+      "src/main.tsx",
+      "_hero_overlay-BEGhNsv3.js",
+      "_arrow-right-D1K2BsD5.js"
+    ],
+    "assets": [
+      "assets/team-1-ywB-uD0r.jpg",
+      "assets/team-2-BFpkXf6G.jpg",
+      "assets/team-3-CCn8faXz.jpg",
+      "assets/about_img-GgUE1QEe.png"
+    ]
+  },
+  "_arrow-right-D1K2BsD5.js": {
+    "file": "assets/arrow-right-D1K2BsD5.js",
+    "name": "arrow-right",
+    "imports": [
+      "src/main.tsx"
+    ]
+  },
+  "_article-3-IPpXbXNV.js": {
+    "file": "assets/article-3-IPpXbXNV.js",
+    "name": "article-3",
+    "assets": [
+      "assets/article-1-DM6FpZt5.jpg",
+      "assets/article-2-DSWjKxE4.jpg",
+      "assets/article-3-BCLo3zgD.jpg"
+    ]
+  },
+  "_hero_bg-DdIfganS.js": {
+    "file": "assets/hero_bg-DdIfganS.js",
+    "name": "hero_bg",
+    "assets": [
+      "assets/hero_bg-B8MRbU1_.png"
+    ]
+  },
+  "_hero_overlay-BEGhNsv3.js": {
+    "file": "assets/hero_overlay-BEGhNsv3.js",
+    "name": "hero_overlay",
+    "imports": [
+      "src/main.tsx"
+    ],
+    "assets": [
+      "assets/logo-DJ3IXyNJ.svg",
+      "assets/title_vector-DH0Xd9nz.svg",
+      "assets/footer_bg-Bbv_kbEE.png",
+      "assets/map-B0JXA41D.png",
+      "assets/tqnia_logo-4W7RIB6M.png",
+      "assets/hero_overlay-BXepeYj_.png"
+    ]
+  },
+  "src/assets/about_img.png": {
+    "file": "assets/about_img-GgUE1QEe.png",
+    "src": "src/assets/about_img.png"
+  },
+  "src/assets/article-1.jpg": {
+    "file": "assets/article-1-DM6FpZt5.jpg",
+    "src": "src/assets/article-1.jpg"
+  },
+  "src/assets/article-2.jpg": {
+    "file": "assets/article-2-DSWjKxE4.jpg",
+    "src": "src/assets/article-2.jpg"
+  },
+  "src/assets/article-3.jpg": {
+    "file": "assets/article-3-BCLo3zgD.jpg",
+    "src": "src/assets/article-3.jpg"
+  },
+  "src/assets/calendar_icon.png": {
+    "file": "assets/calendar_icon-BybcIfVT.png",
+    "src": "src/assets/calendar_icon.png"
+  },
+  "src/assets/clock_icon.png": {
+    "file": "assets/clock_icon-BhzRBRV5.png",
+    "src": "src/assets/clock_icon.png"
+  },
+  "src/assets/contact_hero.png": {
+    "file": "assets/contact_hero-B8iR08JB.png",
+    "src": "src/assets/contact_hero.png"
+  },
+  "src/assets/footer_bg.png": {
+    "file": "assets/footer_bg-Bbv_kbEE.png",
+    "src": "src/assets/footer_bg.png"
+  },
+  "src/assets/hero_bg.png": {
+    "file": "assets/hero_bg-B8MRbU1_.png",
+    "src": "src/assets/hero_bg.png"
+  },
+  "src/assets/hero_overlay.png": {
+    "file": "assets/hero_overlay-BXepeYj_.png",
+    "src": "src/assets/hero_overlay.png"
+  },
+  "src/assets/logo.svg": {
+    "file": "assets/logo-DJ3IXyNJ.svg",
+    "src": "src/assets/logo.svg"
+  },
+  "src/assets/map.png": {
+    "file": "assets/map-B0JXA41D.png",
+    "src": "src/assets/map.png"
+  },
+  "src/assets/team-1.jpg": {
+    "file": "assets/team-1-ywB-uD0r.jpg",
+    "src": "src/assets/team-1.jpg"
+  },
+  "src/assets/team-2.jpg": {
+    "file": "assets/team-2-BFpkXf6G.jpg",
+    "src": "src/assets/team-2.jpg"
+  },
+  "src/assets/team-3.jpg": {
+    "file": "assets/team-3-CCn8faXz.jpg",
+    "src": "src/assets/team-3.jpg"
+  },
+  "src/assets/title_vector.svg": {
+    "file": "assets/title_vector-DH0Xd9nz.svg",
+    "src": "src/assets/title_vector.svg"
+  },
+  "src/assets/tqnia_logo.png": {
+    "file": "assets/tqnia_logo-4W7RIB6M.png",
+    "src": "src/assets/tqnia_logo.png"
+  },
+  "src/assets/vision-bg.png": {
+    "file": "assets/vision-bg-Cnmru9We.png",
+    "src": "src/assets/vision-bg.png"
+  },
+  "src/main.tsx": {
+    "file": "assets/main-CaO5LLmE.js",
+    "name": "main",
+    "src": "src/main.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/pages/AboutUs.tsx",
+      "src/pages/BlogDetail.tsx",
+      "src/pages/BlogPage.tsx",
+      "src/pages/ContactPage.tsx",
+      "src/pages/Index.tsx",
+      "src/pages/NotFound.tsx",
+      "src/pages/ServicesPage.tsx"
+    ],
+    "css": [
+      "assets/main-B8L9XdUD.css"
+    ]
+  },
+  "src/pages/AboutUs.tsx": {
+    "file": "assets/AboutUs-C3rjPpu0.js",
+    "name": "AboutUs",
+    "src": "src/pages/AboutUs.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.tsx",
+      "_hero_overlay-BEGhNsv3.js",
+      "_about_img-Cf9swsCT.js",
+      "_hero_bg-DdIfganS.js",
+      "_arrow-right-D1K2BsD5.js"
+    ]
+  },
+  "src/pages/BlogDetail.tsx": {
+    "file": "assets/BlogDetail-DjLaJfj7.js",
+    "name": "BlogDetail",
+    "src": "src/pages/BlogDetail.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.tsx",
+      "_hero_overlay-BEGhNsv3.js",
+      "_hero_bg-DdIfganS.js",
+      "_article-3-IPpXbXNV.js"
+    ]
+  },
+  "src/pages/BlogPage.tsx": {
+    "file": "assets/BlogPage-KkiAEgTd.js",
+    "name": "BlogPage",
+    "src": "src/pages/BlogPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.tsx",
+      "_hero_overlay-BEGhNsv3.js",
+      "_hero_bg-DdIfganS.js",
+      "_article-3-IPpXbXNV.js"
+    ]
+  },
+  "src/pages/ContactPage.tsx": {
+    "file": "assets/ContactPage-h2bvFCio.js",
+    "name": "ContactPage",
+    "src": "src/pages/ContactPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.tsx",
+      "_hero_overlay-BEGhNsv3.js"
+    ],
+    "assets": [
+      "assets/contact_hero-B8iR08JB.png",
+      "assets/calendar_icon-BybcIfVT.png",
+      "assets/clock_icon-BhzRBRV5.png"
+    ]
+  },
+  "src/pages/Index.tsx": {
+    "file": "assets/Index-C79CcQ2K.js",
+    "name": "Index",
+    "src": "src/pages/Index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.tsx",
+      "_hero_overlay-BEGhNsv3.js",
+      "_hero_bg-DdIfganS.js",
+      "_about_img-Cf9swsCT.js",
+      "_article-3-IPpXbXNV.js",
+      "_arrow-right-D1K2BsD5.js"
+    ],
+    "assets": [
+      "assets/vision-bg-Cnmru9We.png"
+    ]
+  },
+  "src/pages/NotFound.tsx": {
+    "file": "assets/NotFound-C3QfxY4M.js",
+    "name": "NotFound",
+    "src": "src/pages/NotFound.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.tsx"
+    ]
+  },
+  "src/pages/ServicesPage.tsx": {
+    "file": "assets/ServicesPage-BDoaEZOW.js",
+    "name": "ServicesPage",
+    "src": "src/pages/ServicesPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.tsx",
+      "_hero_overlay-BEGhNsv3.js",
+      "_hero_bg-DdIfganS.js",
+      "_arrow-right-D1K2BsD5.js"
+    ]
+  }
+}

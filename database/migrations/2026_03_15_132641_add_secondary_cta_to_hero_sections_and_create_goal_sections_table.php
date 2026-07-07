@@ -1,0 +1,42 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('hero_sections', function (Blueprint $table) {
+            $table->json('secondary_cta_label')->nullable()->after('cta_url');
+            $table->string('secondary_cta_url')->nullable()->after('secondary_cta_label');
+        });
+
+        Schema::create('goal_sections', function (Blueprint $table) {
+            $table->id();
+            $table->json('badge')->nullable();
+            $table->json('title')->nullable();
+            $table->json('cta_label')->nullable();
+            $table->string('cta_url')->nullable();
+            $table->boolean('is_active')->default(true);
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('goal_sections');
+
+        Schema::table('hero_sections', function (Blueprint $table) {
+            $table->dropColumn(['secondary_cta_label', 'secondary_cta_url']);
+        });
+    }
+};

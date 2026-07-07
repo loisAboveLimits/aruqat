@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "articles": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "With You Legally at Every Step",
+    "cta": "Discover Our Services",
+    "secondary": "Request Consultation",
+    "edit": "Edit"
+  },
+  "about": {
+    "badge": "About Arwqat Al Netham",
+    "title": "We are a leading Law Firm",
+    "description1": "Arwqat Al Netham Law Firm and Legal Consultancy is one of the most distinguished law firms in the Kingdom of Saudi Arabia.",
+    "description2": "The firm includes a select group of qualified professionals who combine scientific and practical expertise covering various legal fields.",
+    "cta": "Read More",
+    "edit": "Edit"
+  },
+  "aboutPage": {
+    "heroTitle": "About Us",
+    "paragraph1": "Arwqat Al Netham Law Firm and Legal Consultancy is one of the largest and most prominent law firms in the Kingdom of Saudi Arabia, comprising an elite group of qualified and experienced professionals in all areas of law and legal practice.",
+    "paragraph2": "We strive to provide distinguished global legal services in every area of our expertise, building long-term relationships with our clients based on mutual trust.",
+    "paragraph3": "Arwqat Al Netham seeks to be a distinguished platform by attracting a group of experts with international skills and standards, enabling us to provide multiple services covering various legal fields.",
+    "paragraph4": "We also strive to provide specialized and comprehensive legal services through an elite team of lawyers and legal consultants with high experience and competence. We work to provide innovative and effective solutions to meet the needs of our clients across various sectors, whether individuals or companies.",
+    "paragraph5": "We believe that legal excellence begins with a deep understanding of client needs and building relationships based on trust and credibility, and we always ensure to keep up with the latest legal and legislative developments to guarantee the best level of legal services.",
+    "tabs": {
+      "vision": "Our Vision",
+      "membership": "Our Membership",
+      "milestones": "Our Milestones"
+    },
+    "tabContent": {
+      "vision": "We seek to build a good relationship with our clients based on mutual trust by providing the finest legal services, through developing and improving the level of work and services provided to meet all legal requirements to the fullest extent.",
+      "membership": "We are proud of our membership in the most prominent local and international legal organizations, which enhances our capabilities and expands our professional network.",
+      "milestones": "We are proud of our rich history of achievements since our establishment, having provided distinguished legal services to hundreds of clients across various sectors."
+    }
+  },
+  "stats": {
+    "clients": "Clients",
+    "experience": "Years Experience",
+    "cases": "Cases"
+  },
+  "clients": {
+    "badge": "Clients We're Proud to Partner With"
+  },
+  "vision": {
+    "badge": "Our Goal",
+    "title": "We focus on quality and commitment\nto achieve the best legal outcomes.",
+    "description": "We believe that legal excellence begins with a deep understanding of client needs and building relationships based on trust and credibility.",
+    "cta": "Read More",
+    "edit": "Edit"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Comprehensive Legal Services with Professionalism",
+    "allServices": "All Our Services",
+    "items": [
+      { "title": "Legal Consultations", "icon": "MessageSquare", "description": "We provide specialized and comprehensive legal consultations across various legal fields. Our team of experienced lawyers and consultants delivers innovative legal solutions that meet our clients' needs and protect their interests." },
+      { "title": "Annual Corporate Contracts", "icon": "FileText", "description": "We offer annual contracting services for companies and institutions, ensuring they receive continuous and integrated legal support throughout the year, including legal review, consultations, and contract management." },
+      { "title": "Litigation & Dispute Resolution", "icon": "Scale", "description": "We represent our clients before all courts and judicial authorities in Saudi Arabia, working to settle disputes through amicable and legal means to achieve the best outcomes." },
+      { "title": "Arbitration & Mediation", "icon": "Gavel", "description": "We provide arbitration and mediation services as an effective alternative to resolving disputes outside the courts, ensuring confidentiality and speed in reaching fair and satisfactory solutions for all parties." },
+      { "title": "Commercial Papers, Bankruptcy & Insurance", "icon": "BookOpen", "description": "We handle cases related to commercial papers, checks, and promissory notes, in addition to bankruptcy and insurance cases with high efficiency in accordance with Saudi regulations." },
+      { "title": "Estates & Wills", "icon": "PenTool", "description": "We provide comprehensive legal services in estates and wills, including estate division, will management, and resolving inheritance disputes in accordance with Islamic Sharia and applicable regulations." },
+      { "title": "Contract Drafting & Review", "icon": "ShieldCheck", "description": "We draft, prepare, review, and audit all types of commercial and civil contracts and agreements to ensure the protection of our clients' rights and avoid any legal loopholes." },
+      { "title": "Documentation", "icon": "Stamp", "description": "We provide comprehensive legal documentation services including contract documentation, agreements, and legal powers of attorney, ensuring full compliance with regulatory requirements and official approved procedures." }
+    ]
+  },
+  "team": {
+    "badge": "Experienced & Professional Legal Team",
+    "title": "Experienced & Professional Legal Team",
+    "discover": "Discover Our Team",
+    "members": [
+      {
+        "name": "Mohammed Al-Shammari",
+        "position": "Senior Lawyer & Head of Litigation"
+      },
+      {
+        "name": "Turki Al-Zahrani",
+        "position": "Legal Consultant – Contracts & Companies"
+      },
+      {
+        "name": "Noura Al-Qahtani",
+        "position": "Lawyer & Legal Consultant"
+      }
+    ]
+  },
+  "articles": {
+    "badge": "Legal Articles",
+    "title": "Blog",
+    "readMore": "Read More",
+    "items": [
+      {
+        "id": "1",
+        "title": "Rights and Obligations of Individuals in Common Cases",
+        "content": "Knowledge of legal rights and duties is one of the most important pillars that help individuals deal consciously with issues and disputes, whether civil, criminal, or labor. Often, a person is ignorant of the simplest of those legal rights and duties.\n\nIn civil cases, knowledge of rights is related to contractual obligations and compensation. It is very important to document every step and agreement to avoid losing rights. Awareness of legal procedures and deadlines also directly contributes to the success of the case and reaching the desired fair judgment.\n\nIn labor cases, the Saudi Labor Law has identified a set of rights and duties for both the employer and the worker, including working hours, end-of-service benefits, vacations, and other basic rights.\n\nCriminal cases also include constitutional rights such as the right to defense and legal representation, the sanctity of homes, and personal privacy. It is very important for an individual to be aware of these rights to ensure that justice takes its course.\n\nThe continuous role of the legal advisor gives the individual a sense of strength in facing crises with the necessary legal knowledge to deal with the situation, regardless of its degree of complexity, which makes specialized legal work a necessary and important job for everyone.\n\nWe at Arwqat Al Netham Law Firm form an integrated legal system that aims to raise legal awareness to ensure a safe and stable legal environment, and we provide all the important elements that ensure the continuation of awareness and stability for everyone."
+      },
+      {
+        "id": "2",
+        "title": "Legal Mistakes Made by Startup Owners"
+      },
+      {
+        "id": "3",
+        "title": "Explaining New Regulations in Saudi Arabia Simply"
+      }
+    ],
+    "otherArticles": "Other Articles"
+  },
+  "cta": {
+    "title": "We Represent You\nwith Confidence",
+    "button": "Contact Us",
+    "location": "Jeddah"
+  },
+  "footer": {
+    "description": "Arwqat Al Netham Law Firm and Legal Consultancy is one of the most distinguished law firms in the Kingdom of Saudi Arabia.",
+    "rights": "All rights reserved to Arwqat Al Netham Law Firm © 2025"
+  },
+  "contactPage": {
+    "heroTitle": "Contact Us",
+    "formTitle": "Request a legal consultation for your business, and we will guide you through the appropriate steps for its steady growth.",
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "date": "Date",
+      "service": "Choose Service",
+      "time": "Time",
+      "description": "Description",
+      "submit": "Submit Application"
+    },
+    "info": {
+      "addressTitle": "Address",
+      "address": "Kingdom of Saudi Arabia - Jeddah - Al Shati District, The Headquarters Business Park Tower - 17th Floor - Office 1701",
+      "phone": "Phone Number",
+      "email": "Email Address"
+    }
+  },
+  "lang": "EN"
+}

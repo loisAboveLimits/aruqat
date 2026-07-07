@@ -1,0 +1,173 @@
+/* Custom Filament Sidebar Styles */
+
+/* 1. Increase spacing between sidebar items */
+.fi-sidebar-item {
+    margin-bottom: 0.55rem !important;
+}
+
+/* 2. Style for the active sidebar item - Solid Dark Blue Background */
+.fi-sidebar-item.fi-active .fi-sidebar-item-button,
+.fi-sidebar-item-active .fi-sidebar-item-button,
+.fi-sidebar-item:has(> .fi-sidebar-item-button.bg-gray-100) .fi-sidebar-item-button,
+.fi-sidebar-item:has(> .fi-sidebar-item-button.bg-white\/5) .fi-sidebar-item-button {
+    background-color: #182249 !important;
+    /* Primary Navy Color */
+    color: #ffffff !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure icon and label are white for active item */
+.fi-sidebar-item.fi-active .fi-sidebar-item-button .fi-sidebar-item-icon,
+.fi-sidebar-item.fi-active .fi-sidebar-item-button .fi-sidebar-item-label,
+.fi-sidebar-item-active .fi-sidebar-item-button .fi-sidebar-item-icon,
+.fi-sidebar-item-active .fi-sidebar-item-button .fi-sidebar-item-label,
+.fi-sidebar-item:has(.fi-sidebar-item-button.bg-gray-100) .fi-sidebar-item-icon,
+.fi-sidebar-item:has(.fi-sidebar-item-button.bg-gray-100) .fi-sidebar-item-label {
+    color: #ffffff !important;
+}
+
+/* 3. General button styling for rounded corners and padding */
+.fi-sidebar-item-button {
+    border-radius: 0.75rem !important;
+    padding-top: 0.55rem !important;
+    padding-bottom: 0.55rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* 4. Non-active items styling - Muted look like the image */
+.fi-sidebar-item:not(.fi-active):not(.fi-sidebar-item-active) .fi-sidebar-item-button .fi-sidebar-item-label {
+    color: #4b5563 !important;
+    /* Muted gray text */
+    font-weight: 500;
+}
+
+.fi-sidebar-item:not(.fi-active):not(.fi-sidebar-item-active) .fi-sidebar-item-button .fi-sidebar-item-icon {
+    color: #9ca3af !important;
+    /* Lite gray icon */
+}
+
+/* Hover effect for non-active items */
+.fi-sidebar-item:not(.fi-active):not(.fi-sidebar-item-active) .fi-sidebar-item-button:hover {
+    background-color: #f3f4f6 !important;
+    color: #111827 !important;
+}
+
+.fi-sidebar-item:not(.fi-active):not(.fi-sidebar-item-active) .fi-sidebar-item-button:hover .fi-sidebar-item-icon {
+    color: #4b5563 !important;
+}
+
+/* 5. Sidebar Group Spacing */
+.fi-sidebar-group {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Adjust Sidebar width if needed to match image feel */
+.fi-sidebar {
+    width: 18rem !important;
+}
+
+/* 6. General Tabs styling (Form Tabs, etc.) */
+.fi-tabs {
+    gap: 0.75rem !important;
+    border-bottom: none !important;
+}
+
+.fi-tabs-item {
+    border-radius: 0.6rem !important;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.2s ease !important;
+    border: none !important;
+}
+
+/* Active Tab Style */
+.fi-tabs-item.fi-active,
+.fi-tabs-item[aria-selected="true"] {
+    background-color: #182249 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure icons and labels in active tabs are white */
+.fi-tabs-item.fi-active .fi-tabs-item-label,
+.fi-tabs-item[aria-selected="true"] .fi-tabs-item-label,
+.fi-tabs-item.fi-active .fi-tabs-item-icon,
+.fi-tabs-item[aria-selected="true"] .fi-tabs-item-icon {
+    color: #ffffff !important;
+}
+
+/* Non-active tabs labels */
+.fi-tabs-item:not(.fi-active):not([aria-selected="true"]) .fi-tabs-item-label {
+    color: #4b5563 !important;
+    font-weight: 500;
+}
+
+/* Hover effect for non-active tabs */
+.fi-tabs-item:not(.fi-active):not([aria-selected="true"]):hover {
+    background-color: #f3f4f6 !important;
+}
+
+/* 7. Account Widget - Full Width & Button Styling */
+.fi-account-widget,
+.fi-wi-account {
+    grid-column: 1 / -1 !important;
+}
+
+/* Style for the Sign Out button in the Account Widget */
+.fi-account-widget form button,
+.fi-account-widget .fi-btn,
+.fi-wi-account form button,
+.fi-wi-account .fi-btn {
+    background-color: #182249 !important; /* Navy Blue */
+    color: #ffffff !important;
+    border-radius: 0.6rem !important;
+    padding: 0.5rem 1.25rem !important;
+    font-weight: 600 !important;
+    border: none !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Ensure label and icon are white */
+.fi-account-widget form button .fi-btn-label,
+.fi-account-widget .fi-btn .fi-btn-label,
+.fi-account-widget form button .fi-btn-icon,
+.fi-account-widget .fi-btn .fi-btn-icon {
+    color: #ffffff !important;
+}
+
+.fi-account-widget form button:hover,
+.fi-account-widget .fi-btn:hover {
+    background-color: #24336d !important;
+    box-shadow: 0 4px 12px rgba(24, 34, 73, 0.3) !important;
+}
+
+/* Custom Scrollbar for Dashboard */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #182249 !important;
+    border-radius: 5px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #24336d !important;
+}
+
+/* Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #182249 #f1f1f1;
+}
+
+/* Hide default theme switcher in user menu dropdown */
+.fi-dropdown-list div:has(button[x-on\:click*="'theme'"]) {
+    display: none !important;
+}

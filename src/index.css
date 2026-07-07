@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 230 49% 19%;
+
+    --card: 0 0% 97.3%;
+    /* #F8F8F8 */
+    --card-foreground: 230 49% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 49% 19%;
+
+    --primary: 228 51% 19%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 77%;
+    --secondary-foreground: 228 51% 19%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 4% 49%;
+
+    --accent: 0 0% 77%;
+    --accent-foreground: 228 51% 19%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 77%;
+    --input: 0 0% 77%;
+    --ring: 228 51% 19%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --navy: 228 51% 19%;
+    --navy-light: 228 40% 25%;
+    --navy-dark: 228 60% 12%;
+    --gold: 0 0% 77%;
+    --gold-light: 0 0% 85%;
+    --section-bg: 210 25% 97%;
+    --hero-overlay: linear-gradient(180deg, hsla(228, 51%, 19%, 0.7) 0%, hsla(228, 51%, 12%, 0.85) 100%);
+    --vision-overlay: linear-gradient(180deg, hsla(228, 51%, 19%, 0.75) 0%, hsla(228, 51%, 12%, 0.9) 100%);
+
+    --font-heading: 'Cairo', sans-serif;
+    --font-body: 'Cairo', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 60% 8%;
+    --foreground: 210 40% 98%;
+    --card: 213 56% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 213 56% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 40 85% 55%;
+    --primary-foreground: 213 56% 12%;
+    --secondary: 213 45% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 213 40% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 40 85% 55%;
+    --accent-foreground: 213 56% 12%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 213 30% 22%;
+    --input: 213 30% 22%;
+    --ring: 40 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+
+  ol {
+    list-style-type: decimal !important;
+    list-style-position: outside;
+    margin-block: 1rem;
+    padding-inline-start: 1rem;
+  }
+
+  ul {
+    list-style-type: disc !important;
+    list-style-position: outside;
+    margin-block: 1rem;
+    padding-inline-start: 1rem;
+  }
+}
+
+@layer components {
+  .section-badge {
+    @apply inline-block text-sm font-semibold tracking-wide px-4 py-1.5 rounded-full;
+    color: hsl(var(--gold));
+    border: 1px solid hsl(var(--gold) / 0.3);
+    background: hsl(var(--gold) / 0.08);
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold;
+    color: hsl(var(--navy));
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-full font-semibold text-base transition-all duration-300;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .btn-primary:hover {
+    background: hsl(var(--gold-light));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px hsl(var(--gold) / 0.4);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-full font-semibold text-base transition-all duration-300;
+    border: 2px solid hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+    background: hsl(var(--secondary));
+  }
+
+  .btn-outline:hover {
+    border-color: hsl(var(--primary-foreground));
+    background: hsl(var(--primary-foreground) / 0.1);
+  }
+
+  .service-card {
+    @apply flex flex-col items-center gap-4 p-8 rounded-2xl transition-all duration-300 cursor-pointer;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px hsl(var(--navy) / 0.1);
+    border-color: hsl(var(--gold) / 0.3);
+  }
+
+  .team-card {
+    @apply relative overflow-hidden rounded-2xl transition-all duration-300;
+  }
+
+  .team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px hsl(var(--navy) / 0.15);
+  }
+
+  .article-card {
+    @apply rounded-2xl overflow-hidden transition-all duration-300;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px hsl(var(--navy) / 0.1);
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Counter animation */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[dir="rtl"] .animate-slide-in {
+  animation: slideInFromRight 0.6s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[dir="ltr"] .animate-slide-in {
+  animation: slideInFromLeft 0.6s ease-out forwards;
+}
+
+/* Hide default date/time picker indicators */
+input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--navy));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--navy-light));
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--navy)) hsl(var(--muted));
+}
+
+.articals_slider .overflow-hidden {
+  overflow: visible !important;
+}

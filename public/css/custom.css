@@ -1,0 +1,15 @@
+.text-lg{
+	font-size: 30px;
+}
+
+#team{display: none;}
+
+.hideThis{display: none !important;}
+
+.fa-whatsapp{
+	font-size: 25px;
+}
+
+/*img[alt="Tqnia Logo"] {
+    display: none;
+}*/
