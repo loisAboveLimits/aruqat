@@ -2,6 +2,7 @@ import { useLanguage } from '@/i18n/LanguageContext';
 import { usePage } from '@inertiajs/react';
 import heroBg from '@/assets/hero_bg.png';
 import hero_overlay from '@/assets/hero_overlay.png';
+import hero_video from '@/assets/videos/banner-video.mp4';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -12,11 +13,34 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 pt-24">
+     {/* 
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
       />
+
       <div className="absolute inset-0" style={{ backgroundImage: `url(${hero_overlay})`, backgroundSize: "cover", backgroundPosition: "center" }} />
+
+      */}
+
+      <div class="banner-video absolute">
+        
+        <div class="ratio ratio-16x9">
+        <video 
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          playsInline={true}
+         >
+
+        <source src={hero_video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>              
+
+        </div> 
+
+
+      </div>
 
 
       <div className="relative z-10 container text-center mt-24">

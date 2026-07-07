@@ -27,3 +27,5 @@ dist-ssr
 /public/storage
 /public/build/
 /development
+*.env
+*.mp4

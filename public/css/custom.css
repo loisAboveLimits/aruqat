@@ -13,3 +13,6 @@
 /*img[alt="Tqnia Logo"] {
     display: none;
 }*/
+
+.banner-video{background-color: #000;}
+.banner-video video{opacity: 0.6;}
