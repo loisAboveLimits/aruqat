@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        {!! SEO::generate(true) !!} 
+
         @php
             $settings = $page['props']['settings'] ?? null;
             $locale = app()->getLocale();
@@ -11,6 +13,7 @@
             $favicon = $settings['favicon_url'] ?? asset('favicon.ico');
             $favType = str_ends_with($favicon, '.svg') ? 'image/svg+xml' : 'image/x-icon';
         @endphp
+
 
         <title inertia>{{ $siteName }}</title>
 

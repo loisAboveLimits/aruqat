@@ -4,13 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
+class ComposerStaticInitdff82ccc538ceb0e7ba8c12d8721c412
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
@@ -23,12 +23,12 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         '2c620c99f96a2b964346b45a4d1d1e64' => __DIR__ . '/..' . '/spatie/invade/src/functions.php',
         'e125f489d647ae664b0af7b573079de7' => __DIR__ . '/..' . '/filament/support/src/helpers.php',
-        '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '2203a247e6fda86070a5e4e07aed533a' => __DIR__ . '/..' . '/symfony/clock/Resources/now.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '476ca15b8d69b04665cd879be9cb4c68' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/functions.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
@@ -45,6 +45,7 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'b69d5f1f95cd1ed438c038b6cbcc45b5' => __DIR__ . '/..' . '/filament/notifications/src/Testing/Autoload.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        'ff726beb450cf069ffc0a06d07597f68' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/helpers.php',
         '89e9938b64b06cc502d7ceca69a380fe' => __DIR__ . '/..' . '/filament/filament/src/global_helpers.php',
         'ebb446bb6d02e998480945fbbb73dc64' => __DIR__ . '/..' . '/filament/filament/src/helpers.php',
         '98caa11a197f6516a8e48aa4abb5ccc6' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/helpers.php',
@@ -58,6 +59,8 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'v' =>
         array (
             'voku\\' => 5,
+            'vipnytt\\RobotsTxtParser\\' => 24,
+            'vipnytt\\' => 8,
         ),
         'Z' =>
         array (
@@ -102,6 +105,7 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\ErrorHandler\\' => 31,
+            'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Clock\\' => 24,
@@ -113,11 +117,13 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
             'Spatie\\Image\\' => 13,
             'Spatie\\ImageOptimizer\\' => 22,
             'Spatie\\Color\\' => 13,
+            'Spatie\\Browsershot\\' => 19,
         ),
         'R' =>
         array (
             'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' => 54,
             'RyanChandler\\BladeCaptureDirective\\' => 35,
+            'Readability\\' => 12,
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
@@ -134,6 +140,7 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
+            'Pdp\\' => 4,
         ),
         'O' =>
         array (
@@ -219,6 +226,8 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         array (
             'Cron\\' => 5,
             'Composer\\Semver\\' => 16,
+            'Composer\\CaBundle\\' => 18,
+            'Codeat3\\BladeIconpark\\' => 22,
             'Carbon\\Doctrine\\' => 16,
             'Carbon\\' => 7,
         ),
@@ -227,9 +236,12 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
             'Brick\\Math\\' => 11,
             'BladeUI\\Icons\\' => 14,
             'BladeUI\\Heroicons\\' => 18,
+            'Backstage\\Seo\\Database\\Factories\\' => 33,
+            'Backstage\\Seo\\' => 14,
         ),
         'A' =>
         array (
+            'Artesaos\\SEOTools\\' => 18,
             'App\\' => 4,
             'AnourValar\\EloquentSerialize\\' => 29,
         ),
@@ -239,6 +251,14 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'voku\\' =>
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'vipnytt\\RobotsTxtParser\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src',
+        ),
+        'vipnytt\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/vipnytt/useragentparser/src',
         ),
         'ZipStream\\' =>
         array (
@@ -368,6 +388,10 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         array (
             0 => __DIR__ . '/..' . '/symfony/error-handler',
         ),
+        'Symfony\\Component\\DomCrawler\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dom-crawler',
+        ),
         'Symfony\\Component\\CssSelector\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/css-selector',
@@ -412,6 +436,10 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         array (
             0 => __DIR__ . '/..' . '/spatie/color/src',
         ),
+        'Spatie\\Browsershot\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/spatie/browsershot/src',
+        ),
         'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/database/factories',
@@ -419,6 +447,10 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'RyanChandler\\BladeCaptureDirective\\' =>
         array (
             0 => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src',
+        ),
+        'Readability\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/j0k3r/php-readability/src',
         ),
         'Ramsey\\Uuid\\' =>
         array (
@@ -472,6 +504,10 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'PhpOption\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'Pdp\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src',
         ),
         'OpenSpout\\' =>
         array (
@@ -687,6 +723,14 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
+        'Composer\\CaBundle\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
+        ),
+        'Codeat3\\BladeIconpark\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/codeat3/blade-iconpark/src',
+        ),
         'Carbon\\Doctrine\\' =>
         array (
             0 => __DIR__ . '/..' . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine',
@@ -706,6 +750,18 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'BladeUI\\Heroicons\\' =>
         array (
             0 => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src',
+        ),
+        'Backstage\\Seo\\Database\\Factories\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/database/factories',
+        ),
+        'Backstage\\Seo\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src',
+        ),
+        'Artesaos\\SEOTools\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools',
         ),
         'App\\' =>
         array (
@@ -789,7 +845,72 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\Filament\\AdminPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AdminPanelProvider.php',
+        'Artesaos\\SEOTools\\Contracts\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLd.php',
+        'Artesaos\\SEOTools\\Contracts\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\Contracts\\MetaTags' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/MetaTags.php',
+        'Artesaos\\SEOTools\\Contracts\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/OpenGraph.php',
+        'Artesaos\\SEOTools\\Contracts\\SEOFriendly' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/SEOFriendly.php',
+        'Artesaos\\SEOTools\\Contracts\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/SEOTools.php',
+        'Artesaos\\SEOTools\\Contracts\\TwitterCards' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/TwitterCards.php',
+        'Artesaos\\SEOTools\\Facades\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/JsonLd.php',
+        'Artesaos\\SEOTools\\Facades\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\Facades\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/OpenGraph.php',
+        'Artesaos\\SEOTools\\Facades\\SEOMeta' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/SEOMeta.php',
+        'Artesaos\\SEOTools\\Facades\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/SEOTools.php',
+        'Artesaos\\SEOTools\\Facades\\TwitterCard' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/TwitterCard.php',
+        'Artesaos\\SEOTools\\Integrations\\Inertia' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Integrations/Inertia.php',
+        'Artesaos\\SEOTools\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/JsonLd.php',
+        'Artesaos\\SEOTools\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/OpenGraph.php',
+        'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Providers/SEOToolsServiceProvider.php',
+        'Artesaos\\SEOTools\\SEOMeta' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/SEOMeta.php',
+        'Artesaos\\SEOTools\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/SEOTools.php',
+        'Artesaos\\SEOTools\\Traits\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Traits/SEOTools.php',
+        'Artesaos\\SEOTools\\TwitterCards' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/TwitterCards.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Backstage\\Seo\\Checks\\Configuration\\NoFollowCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Configuration/NoFollowCheck.php',
+        'Backstage\\Seo\\Checks\\Configuration\\NoIndexCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Configuration/NoIndexCheck.php',
+        'Backstage\\Seo\\Checks\\Configuration\\RobotsCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Configuration/RobotsCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\AltTagCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/AltTagCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\BrokenImageCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/BrokenImageCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\BrokenLinkCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/BrokenLinkCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\ContentLengthCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/ContentLengthCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\KeywordInFirstParagraphCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/KeywordInFirstParagraphCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\KeywordInTitleCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/KeywordInTitleCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\MixedContentCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/MixedContentCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\MultipleHeadingCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/MultipleHeadingCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\TooLongSentenceCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/TooLongSentenceCheck.php',
+        'Backstage\\Seo\\Checks\\Content\\TransitionWordRatioCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Content/TransitionWordRatioCheck.php',
+        'Backstage\\Seo\\Checks\\Meta\\DescriptionCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Meta/DescriptionCheck.php',
+        'Backstage\\Seo\\Checks\\Meta\\InvalidHeadElementsCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Meta/InvalidHeadElementsCheck.php',
+        'Backstage\\Seo\\Checks\\Meta\\LangCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Meta/LangCheck.php',
+        'Backstage\\Seo\\Checks\\Meta\\OpenGraphImageCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Meta/OpenGraphImageCheck.php',
+        'Backstage\\Seo\\Checks\\Meta\\TitleLengthCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Meta/TitleLengthCheck.php',
+        'Backstage\\Seo\\Checks\\Performance\\CompressionCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Performance/CompressionCheck.php',
+        'Backstage\\Seo\\Checks\\Performance\\CssSizeCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Performance/CssSizeCheck.php',
+        'Backstage\\Seo\\Checks\\Performance\\HtmlSizeCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Performance/HtmlSizeCheck.php',
+        'Backstage\\Seo\\Checks\\Performance\\ImageSizeCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Performance/ImageSizeCheck.php',
+        'Backstage\\Seo\\Checks\\Performance\\JavascriptSizeCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Performance/JavascriptSizeCheck.php',
+        'Backstage\\Seo\\Checks\\Performance\\ResponseCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Performance/ResponseCheck.php',
+        'Backstage\\Seo\\Checks\\Performance\\TtfbCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Checks/Performance/TtfbCheck.php',
+        'Backstage\\Seo\\Commands\\SeoScan' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Commands/SeoScan.php',
+        'Backstage\\Seo\\Commands\\SeoScanUrl' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Commands/SeoScanUrl.php',
+        'Backstage\\Seo\\Events\\ScanCompleted' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Events/ScanCompleted.php',
+        'Backstage\\Seo\\Facades\\Seo' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Facades/Seo.php',
+        'Backstage\\Seo\\Helpers\\TransitionWords' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Helpers/TransitionWords.php',
+        'Backstage\\Seo\\Http' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Http.php',
+        'Backstage\\Seo\\Interfaces\\Check' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Interfaces/Check.php',
+        'Backstage\\Seo\\Jobs\\Scan' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Jobs/Scan.php',
+        'Backstage\\Seo\\Models\\SeoScan' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Models/SeoScan.php',
+        'Backstage\\Seo\\Models\\SeoScore' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Models/SeoScore.php',
+        'Backstage\\Seo\\Seo' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Seo.php',
+        'Backstage\\Seo\\SeoInterface' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/SeoInterface.php',
+        'Backstage\\Seo\\SeoScore' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/SeoScore.php',
+        'Backstage\\Seo\\SeoServiceProvider' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/SeoServiceProvider.php',
+        'Backstage\\Seo\\Traits\\Actions' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Traits/Actions.php',
+        'Backstage\\Seo\\Traits\\HasSeoScore' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Traits/HasSeoScore.php',
+        'Backstage\\Seo\\Traits\\PerformCheck' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Traits/PerformCheck.php',
+        'Backstage\\Seo\\Traits\\Translatable' => __DIR__ . '/..' . '/backstage/laravel-seo-scanner/src/Traits/Translatable.php',
         'BladeUI\\Heroicons\\BladeHeroiconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src/BladeHeroiconsServiceProvider.php',
         'BladeUI\\Icons\\BladeIconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/BladeIconsServiceProvider.php',
         'BladeUI\\Icons\\Components\\Icon' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Components/Icon.php',
@@ -913,6 +1034,8 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'Carbon\\Unit' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Unit.php',
         'Carbon\\WeekDay' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/WeekDay.php',
         'Carbon\\WrapperClock' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/WrapperClock.php',
+        'Codeat3\\BladeIconpark\\BladeIconparkServiceProvider' => __DIR__ . '/..' . '/codeat3/blade-iconpark/src/BladeIconparkServiceProvider.php',
+        'Composer\\CaBundle\\CaBundle' => __DIR__ . '/..' . '/composer/ca-bundle/src/CaBundle.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Composer\\Semver\\Comparator' => __DIR__ . '/..' . '/composer/semver/src/Comparator.php',
         'Composer\\Semver\\CompilingMatcher' => __DIR__ . '/..' . '/composer/semver/src/CompilingMatcher.php',
@@ -6820,6 +6943,46 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'PHPUnit\\Util\\Xml' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Xml.php',
         'PHPUnit\\Util\\Xml\\Loader' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Loader.php',
         'PHPUnit\\Util\\Xml\\XmlException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Exception/XmlException.php',
+        'Pdp\\CannotProcessHost' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/CannotProcessHost.php',
+        'Pdp\\Domain' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Domain.php',
+        'Pdp\\DomainName' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/DomainName.php',
+        'Pdp\\DomainNameProvider' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/DomainNameProvider.php',
+        'Pdp\\DomainNameResolver' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/DomainNameResolver.php',
+        'Pdp\\EffectiveTopLevelDomain' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/EffectiveTopLevelDomain.php',
+        'Pdp\\Host' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Host.php',
+        'Pdp\\Idna' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Idna.php',
+        'Pdp\\IdnaInfo' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/IdnaInfo.php',
+        'Pdp\\PublicSuffixList' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/PublicSuffixList.php',
+        'Pdp\\RegisteredName' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/RegisteredName.php',
+        'Pdp\\ResolvedDomain' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/ResolvedDomain.php',
+        'Pdp\\ResolvedDomainName' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/ResolvedDomainName.php',
+        'Pdp\\ResourceUri' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/ResourceUri.php',
+        'Pdp\\Rules' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Rules.php',
+        'Pdp\\Storage\\PsrStorageFactory' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/PsrStorageFactory.php',
+        'Pdp\\Storage\\PublicSuffixListCache' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/PublicSuffixListCache.php',
+        'Pdp\\Storage\\PublicSuffixListClient' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/PublicSuffixListClient.php',
+        'Pdp\\Storage\\PublicSuffixListPsr16Cache' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/PublicSuffixListPsr16Cache.php',
+        'Pdp\\Storage\\PublicSuffixListPsr18Client' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/PublicSuffixListPsr18Client.php',
+        'Pdp\\Storage\\PublicSuffixListStorage' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/PublicSuffixListStorage.php',
+        'Pdp\\Storage\\PublicSuffixListStorageFactory' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/PublicSuffixListStorageFactory.php',
+        'Pdp\\Storage\\RulesStorage' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/RulesStorage.php',
+        'Pdp\\Storage\\TimeToLive' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TimeToLive.php',
+        'Pdp\\Storage\\TopLevelDomainListCache' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TopLevelDomainListCache.php',
+        'Pdp\\Storage\\TopLevelDomainListClient' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TopLevelDomainListClient.php',
+        'Pdp\\Storage\\TopLevelDomainListPsr16Cache' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TopLevelDomainListPsr16Cache.php',
+        'Pdp\\Storage\\TopLevelDomainListPsr18Client' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TopLevelDomainListPsr18Client.php',
+        'Pdp\\Storage\\TopLevelDomainListStorage' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TopLevelDomainListStorage.php',
+        'Pdp\\Storage\\TopLevelDomainListStorageFactory' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TopLevelDomainListStorageFactory.php',
+        'Pdp\\Storage\\TopLevelDomainsStorage' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Storage/TopLevelDomainsStorage.php',
+        'Pdp\\Stream' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Stream.php',
+        'Pdp\\Suffix' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/Suffix.php',
+        'Pdp\\SyntaxError' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/SyntaxError.php',
+        'Pdp\\TopLevelDomainList' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/TopLevelDomainList.php',
+        'Pdp\\TopLevelDomains' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/TopLevelDomains.php',
+        'Pdp\\UnableToLoadPublicSuffixList' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/UnableToLoadPublicSuffixList.php',
+        'Pdp\\UnableToLoadResource' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/UnableToLoadResource.php',
+        'Pdp\\UnableToLoadTopLevelDomainList' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/UnableToLoadTopLevelDomainList.php',
+        'Pdp\\UnableToResolveDomain' => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/src/UnableToResolveDomain.php',
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',
         'PharIo\\Manifest\\Author' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Author.php',
@@ -7690,6 +7853,8 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
+        'Readability\\JSLikeHTMLElement' => __DIR__ . '/..' . '/j0k3r/php-readability/src/JSLikeHTMLElement.php',
+        'Readability\\Readability' => __DIR__ . '/..' . '/j0k3r/php-readability/src/Readability.php',
         'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirective' => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src/BladeCaptureDirective.php',
         'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider' => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src/BladeCaptureDirectiveServiceProvider.php',
         'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
@@ -7899,6 +8064,17 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\Browsershot\\Browsershot' => __DIR__ . '/..' . '/spatie/browsershot/src/Browsershot.php',
+        'Spatie\\Browsershot\\ChromiumResult' => __DIR__ . '/..' . '/spatie/browsershot/src/ChromiumResult.php',
+        'Spatie\\Browsershot\\Enums\\Polling' => __DIR__ . '/..' . '/spatie/browsershot/src/Enums/Polling.php',
+        'Spatie\\Browsershot\\Exceptions\\CouldNotTakeBrowsershot' => __DIR__ . '/..' . '/spatie/browsershot/src/Exceptions/CouldNotTakeBrowsershot.php',
+        'Spatie\\Browsershot\\Exceptions\\ElementNotFound' => __DIR__ . '/..' . '/spatie/browsershot/src/Exceptions/ElementNotFound.php',
+        'Spatie\\Browsershot\\Exceptions\\FileDoesNotExistException' => __DIR__ . '/..' . '/spatie/browsershot/src/Exceptions/FileDoesNotExistException.php',
+        'Spatie\\Browsershot\\Exceptions\\FileUrlNotAllowed' => __DIR__ . '/..' . '/spatie/browsershot/src/Exceptions/FileUrlNotAllowed.php',
+        'Spatie\\Browsershot\\Exceptions\\HtmlIsNotAllowedToContainFile' => __DIR__ . '/..' . '/spatie/browsershot/src/Exceptions/HtmlIsNotAllowedToContainFile.php',
+        'Spatie\\Browsershot\\Exceptions\\RemoteConnectionException' => __DIR__ . '/..' . '/spatie/browsershot/src/Exceptions/RemoteConnectionException.php',
+        'Spatie\\Browsershot\\Exceptions\\UnsuccessfulResponse' => __DIR__ . '/..' . '/spatie/browsershot/src/Exceptions/UnsuccessfulResponse.php',
+        'Spatie\\Browsershot\\ImageManipulations' => __DIR__ . '/..' . '/spatie/browsershot/src/ImageManipulations.php',
         'Spatie\\Color\\CIELab' => __DIR__ . '/..' . '/spatie/color/src/CIELab.php',
         'Spatie\\Color\\Cmyk' => __DIR__ . '/..' . '/spatie/color/src/Cmyk.php',
         'Spatie\\Color\\Color' => __DIR__ . '/..' . '/spatie/color/src/Color.php',
@@ -8300,6 +8476,25 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'Symfony\\Component\\CssSelector\\XPath\\Translator' => __DIR__ . '/..' . '/symfony/css-selector/XPath/Translator.php',
         'Symfony\\Component\\CssSelector\\XPath\\TranslatorInterface' => __DIR__ . '/..' . '/symfony/css-selector/XPath/TranslatorInterface.php',
         'Symfony\\Component\\CssSelector\\XPath\\XPathExpr' => __DIR__ . '/..' . '/symfony/css-selector/XPath/XPathExpr.php',
+        'Symfony\\Component\\DomCrawler\\AbstractUriElement' => __DIR__ . '/..' . '/symfony/dom-crawler/AbstractUriElement.php',
+        'Symfony\\Component\\DomCrawler\\Crawler' => __DIR__ . '/..' . '/symfony/dom-crawler/Crawler.php',
+        'Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/ChoiceFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FileFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FileFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\InputFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/InputFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\TextareaFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/TextareaFormField.php',
+        'Symfony\\Component\\DomCrawler\\Form' => __DIR__ . '/..' . '/symfony/dom-crawler/Form.php',
+        'Symfony\\Component\\DomCrawler\\FormFieldRegistry' => __DIR__ . '/..' . '/symfony/dom-crawler/FormFieldRegistry.php',
+        'Symfony\\Component\\DomCrawler\\Image' => __DIR__ . '/..' . '/symfony/dom-crawler/Image.php',
+        'Symfony\\Component\\DomCrawler\\Link' => __DIR__ . '/..' . '/symfony/dom-crawler/Link.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerAnySelectorTextContains' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerAnySelectorTextContains.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerAnySelectorTextSame' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerAnySelectorTextSame.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorAttributeValueSame' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorAttributeValueSame.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorCount' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorCount.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorExists' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorExists.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorTextContains' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorTextContains.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorTextSame' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorTextSame.php',
+        'Symfony\\Component\\DomCrawler\\UriResolver' => __DIR__ . '/..' . '/symfony/dom-crawler/UriResolver.php',
         'Symfony\\Component\\ErrorHandler\\BufferingLogger' => __DIR__ . '/..' . '/symfony/error-handler/BufferingLogger.php',
         'Symfony\\Component\\ErrorHandler\\Command\\ErrorDumpCommand' => __DIR__ . '/..' . '/symfony/error-handler/Command/ErrorDumpCommand.php',
         'Symfony\\Component\\ErrorHandler\\Debug' => __DIR__ . '/..' . '/symfony/error-handler/Debug.php',
@@ -9248,15 +9443,83 @@ class ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac
         'ZipStream\\Zs\\ExtendedInformationExtraField' => __DIR__ . '/..' . '/maennchen/zipstream-php/src/Zs/ExtendedInformationExtraField.php',
         'staabm\\SideEffectsDetector\\SideEffect' => __DIR__ . '/..' . '/staabm/side-effects-detector/lib/SideEffect.php',
         'staabm\\SideEffectsDetector\\SideEffectsDetector' => __DIR__ . '/..' . '/staabm/side-effects-detector/lib/SideEffectsDetector.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Cache\\BaseCore' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Cache/BaseCore.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Cache\\BaseInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Cache/BaseInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Cache\\CacheInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Cache/CacheInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Cache\\ManageCore' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Cache/ManageCore.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Cache\\ManageInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Cache/ManageInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Cache\\MySQL\\Base' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Cache/MySQL/Base.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Cache\\MySQL\\Manage' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Cache/MySQL/Manage.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Delay\\BaseCore' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Delay/BaseCore.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Delay\\BaseInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Delay/BaseInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Delay\\DelayInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Delay/DelayInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Delay\\ManageCore' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Delay/ManageCore.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Delay\\ManageInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Delay/ManageInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Delay\\MySQL\\Base' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Delay/MySQL/Base.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Delay\\MySQL\\Manage' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Delay/MySQL/Manage.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\AllowClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/AllowClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\CleanParamClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/CleanParamClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\ClientInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/ClientInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\CommentClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/CommentClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\DelayClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/DelayClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\DelayCore' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/DelayCore.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\DelayInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/DelayInterface.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\DirectiveClientTrait' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/DirectiveClientTrait.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\HostClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/HostClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\RequestRateClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/RequestRateClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\RobotVersionClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/RobotVersionClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\SitemapClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/SitemapClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\UserAgentClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/UserAgentClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\UserAgentTools' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/UserAgentTools.php',
+        'vipnytt\\RobotsTxtParser\\Client\\Directives\\VisitTimeClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/Directives/VisitTimeClient.php',
+        'vipnytt\\RobotsTxtParser\\Client\\RenderClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Client/RenderClient.php',
+        'vipnytt\\RobotsTxtParser\\Database' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Database.php',
+        'vipnytt\\RobotsTxtParser\\Exceptions\\ClientException' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Exceptions/ClientException.php',
+        'vipnytt\\RobotsTxtParser\\Exceptions\\DatabaseException' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Exceptions/DatabaseException.php',
+        'vipnytt\\RobotsTxtParser\\Exceptions\\OutOfSyncException' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Exceptions/OutOfSyncException.php',
+        'vipnytt\\RobotsTxtParser\\Exceptions\\ParserException' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Exceptions/ParserException.php',
+        'vipnytt\\RobotsTxtParser\\Exceptions\\RobotsTxtParserException' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Exceptions/RobotsTxtParserException.php',
+        'vipnytt\\RobotsTxtParser\\Handler\\DatabaseTrait' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Handler/DatabaseTrait.php',
+        'vipnytt\\RobotsTxtParser\\Handler\\Directives\\RootDirectiveHandler' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Handler/Directives/RootDirectiveHandler.php',
+        'vipnytt\\RobotsTxtParser\\Handler\\Directives\\SubDirectiveHandler' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Handler/Directives/SubDirectiveHandler.php',
+        'vipnytt\\RobotsTxtParser\\Handler\\EncodingHandler' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Handler/EncodingHandler.php',
+        'vipnytt\\RobotsTxtParser\\Handler\\ErrorHandler' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Handler/ErrorHandler.php',
+        'vipnytt\\RobotsTxtParser\\Handler\\RenderHandler' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Handler/RenderHandler.php',
+        'vipnytt\\RobotsTxtParser\\Import' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Import.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\AllowParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/AllowParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\CleanParamParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/CleanParamParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\CommentParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/CommentParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\DelayParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/DelayParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\DirectiveParserTrait' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/DirectiveParserTrait.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\HostParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/HostParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\HostParserCore' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/HostParserCore.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\ParserInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/ParserInterface.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\RequestRateParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/RequestRateParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\RobotVersionParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/RobotVersionParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\SitemapParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/SitemapParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\UserAgentParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/UserAgentParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\Directives\\VisitTimeParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/Directives/VisitTimeParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\HeaderParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/HeaderParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\RobotsTxtParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/RobotsTxtParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\StatusCodeParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/StatusCodeParser.php',
+        'vipnytt\\RobotsTxtParser\\Parser\\UriParser' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/Parser/UriParser.php',
+        'vipnytt\\RobotsTxtParser\\RobotsTxtInterface' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/RobotsTxtInterface.php',
+        'vipnytt\\RobotsTxtParser\\TxtClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/TxtClient.php',
+        'vipnytt\\RobotsTxtParser\\UriClient' => __DIR__ . '/..' . '/vipnytt/robotstxtparser/src/UriClient.php',
+        'vipnytt\\UserAgentParser' => __DIR__ . '/..' . '/vipnytt/useragentparser/src/UserAgentParser.php',
+        'vipnytt\\UserAgentParser\\Exceptions\\FormatException' => __DIR__ . '/..' . '/vipnytt/useragentparser/src/UserAgentParser/Exceptions/FormatException.php',
+        'vipnytt\\UserAgentParser\\Exceptions\\ProductException' => __DIR__ . '/..' . '/vipnytt/useragentparser/src/UserAgentParser/Exceptions/ProductException.php',
+        'vipnytt\\UserAgentParser\\Exceptions\\UserAgentParserException' => __DIR__ . '/..' . '/vipnytt/useragentparser/src/UserAgentParser/Exceptions/UserAgentParserException.php',
+        'vipnytt\\UserAgentParser\\Exceptions\\VersionException' => __DIR__ . '/..' . '/vipnytt/useragentparser/src/UserAgentParser/Exceptions/VersionException.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb1a09f1961f18c2377e8ef38c56feeac::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitdff82ccc538ceb0e7ba8c12d8721c412::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitdff82ccc538ceb0e7ba8c12d8721c412::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitdff82ccc538ceb0e7ba8c12d8721c412::$classMap;
 
         }, null, ClassLoader::class);
     }

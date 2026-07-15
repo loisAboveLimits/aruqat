@@ -1,0 +1,64 @@
+{
+  "name": "vipnytt/robotstxtparser",
+  "description": "Robots.txt parsing library, with full support for every directive and specification.",
+  "type": "library",
+  "keywords": [
+    "robots.txt",
+    "parser",
+    "Google",
+    "Yandex",
+    "W3C",
+    "The Web Robots Pages",
+    "Robots Exclusion Protocol",
+    "Robot exclusion standard",
+    "REP",
+    "Robot",
+    "Robots",
+    "Spider",
+    "Web-Crawler",
+    "Sitemaps.org",
+    "Sean Conner",
+    "Martijn Koster"
+  ],
+  "homepage": "https://github.com/VIPnytt/RobotsTxtParser",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "VIP nytt AS",
+      "email": "support@vipnytt.no",
+      "role": "Owner"
+    },
+    {
+      "name": "Jan-Petter Gundersen",
+      "email": "jpg@vipnytt.no",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "support@vipnytt.no",
+    "issues": "https://github.com/VIPnytt/RobotsTxtParser/issues",
+    "wiki": "https://github.com/VIPnytt/RobotsTxtParser/tree/master/docs",
+    "source": "https://github.com/VIPnytt/RobotsTxtParser",
+    "docs": "https://github.com/VIPnytt/RobotsTxtParser/tree/master/docs"
+  },
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "composer/ca-bundle": "^1.0",
+    "vipnytt/useragentparser": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "vipnytt\\RobotsTxtParser\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "vipnytt\\RobotsTxtParser\\Tests\\": "tests/"
+    }
+  }
+}

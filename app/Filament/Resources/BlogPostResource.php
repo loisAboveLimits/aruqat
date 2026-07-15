@@ -83,6 +83,30 @@ class BlogPostResource extends Resource
                                     ->image(),
                             ]),
                     ])->columnSpan(['lg' => 1]),
+                 Forms\Components\Group::make()
+                                    ->schema([
+                                        Forms\Components\Section::make()
+                                        ->schema([
+                                            TextInput::make('seo_title')
+                                                ->required(),
+                                            TextInput::make('seo_description'),
+                                            TextInput::make('seo_keywords'),
+                                            TextInput::make('canonical_url'),
+                                            TextInput::make('og_title'),
+                                            TextInput::make('og_description'),
+                                            SpatieMediaLibraryFileUpload::make('og_image')
+                                                ->collection('og_image')
+                                                ->image()
+                                                ->columnSpanFull(),
+                                            TextInput::make('twitter_title'),
+                                            TextInput::make('twitter_description'),
+                                            SpatieMediaLibraryFileUpload::make('twitter_image')
+                                                ->collection('twitter_image')
+                                                ->image()
+                                                ->columnSpanFull(),
+                                            TextInput::make('robots'),
+                                        ]),
+                                    ])->columnSpan(['lg' => 1]),                    
             ])->columns(['default' => 3]);
     }
 

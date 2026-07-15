@@ -8,6 +8,13 @@ use App\Models\SeoSetting;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 
+use Artesaos\SEOTools\Facades\SEOTools;
+use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+
 class BlogController extends Controller
 {
     public function index()
@@ -21,6 +28,19 @@ class BlogController extends Controller
             });
 
         $seo = SeoSetting::where('page', 'blog')->first();
+
+        SEOMeta::setTitle('Blogs');
+        SEOMeta::setDescription('This is my page description');
+        SEOMeta::setKeywords('asdasd,rtrtyrty,dfgdfg');
+        SEOMeta::setCanonical('https://codecasts.com.br/lesson');
+
+        OpenGraph::setDescription('This is my page description');
+        OpenGraph::setTitle('Home');
+        OpenGraph::setUrl('http://current.url.com');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle('Homepage');
+        TwitterCard::setSite('@LuizVinicius73asdad');
 
         return Inertia::render('BlogPage', [
             'posts' => $posts,
@@ -48,6 +68,7 @@ class BlogController extends Controller
                 $p->cover_url = $p->getFirstMediaUrl('blog_covers');
                 return $p;
             });
+
 
         return Inertia::render('BlogDetail', [
             'post' => $post,

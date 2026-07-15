@@ -96,6 +96,29 @@ class HomePageResource extends Resource
                                     ->image()
                                     ->columnSpanFull(),
                             ]),
+
+                        Tabs\Tab::make('SEO Section')
+                            ->icon('iconpark-seo')
+                            ->schema([
+                                TextInput::make('seo_title')
+                                    ->required(),
+                                TextInput::make('seo_description'),
+                                TextInput::make('seo_keywords'),
+                                TextInput::make('canonical_url'),
+                                TextInput::make('og_title'),
+                                TextInput::make('og_description'),
+                                SpatieMediaLibraryFileUpload::make('og_image')
+                                    ->collection('og_image')
+                                    ->image()
+                                    ->columnSpanFull(),
+                                TextInput::make('twitter_title'),
+                                TextInput::make('twitter_description'),
+                                SpatieMediaLibraryFileUpload::make('twitter_image')
+                                    ->collection('twitter_image')
+                                    ->image()
+                                    ->columnSpanFull(),
+                                TextInput::make('robots'),
+                            ]),
                     ])
                     ->columnSpanFull(),
                 

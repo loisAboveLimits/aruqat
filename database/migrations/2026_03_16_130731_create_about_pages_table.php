@@ -27,6 +27,24 @@ return new class extends Migration
             // Goal Tab
             $table->json('goals_title')->nullable();
             $table->json('goals_content')->nullable();
+
+            // SEO Section
+            $table->json('seo_badge')->nullable();
+            $table->json('seo_tab_title')->nullable();
+            $table->string('seo_title')->nullable();
+            $table->text('seo_description')->nullable();
+            $table->string('seo_keywords')->nullable();
+            $table->string('canonical_url')->nullable();
+
+            $table->string('og_title')->nullable();
+            $table->text('og_description')->nullable();
+            $table->string('og_image')->nullable();
+
+            $table->string('twitter_title')->nullable();
+            $table->text('twitter_description')->nullable();
+            $table->string('twitter_image')->nullable();
+
+            $table->string('robots')->default('index,follow');  
             
             $table->boolean('is_active')->default(true);
             $table->softDeletes();

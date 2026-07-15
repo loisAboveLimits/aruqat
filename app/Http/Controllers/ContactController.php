@@ -15,6 +15,19 @@ class ContactController extends Controller
         $services = Service::where('is_active', true)->orderBy('sort_order')->get();
         $seo = SeoSetting::where('page', 'contact')->first();
 
+        SEOMeta::setTitle('Contact');
+        SEOMeta::setDescription('This is my page description');
+        SEOMeta::setKeywords('asdasd,rtrtyrty,dfgdfg');
+        SEOMeta::setCanonical('https://codecasts.com.br/lesson');
+
+        OpenGraph::setDescription('This is my page description');
+        OpenGraph::setTitle('Home');
+        OpenGraph::setUrl('http://current.url.com');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle('Homepage');
+        TwitterCard::setSite('@LuizVinicius73asdad');
+
         return Inertia::render('ContactPage', [
             'services' => $services,
             'seo' => $seo,

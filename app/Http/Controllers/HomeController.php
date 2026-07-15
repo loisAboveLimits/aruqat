@@ -12,9 +12,18 @@ use App\Models\BlogPost;
 use App\Models\SeoSetting;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Artesaos\SEOTools\Facades\SEOTools;
+use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+
 
 class HomeController extends Controller
 {
+    use SEOToolsTrait;
+
     public function index()
     {
         $homePage = HomePage::where('is_active', true)->latest()->first();
@@ -96,6 +105,24 @@ class HomeController extends Controller
             });
 
         $seo = SeoSetting::where('page', 'home')->first();
+    
+        /*SEO*/
+        SEOMeta::setTitle('Home');
+        SEOMeta::setDescription('This is my page description');
+        SEOMeta::setKeywords('asdasd,rtrtyrty,dfgdfg');
+        SEOMeta::setCanonical('https://codecasts.com.br/lesson');
+
+        OpenGraph::setDescription('This is my page description');
+        OpenGraph::setTitle('Home');
+        OpenGraph::setUrl('http://current.url.com');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle('Homepage');
+        TwitterCard::setSite('@LuizVinicius73asdad');
+
+        // JsonLd::setTitle('Homepage');
+        // JsonLd::setDescription('This is my page descriptionasdasd');
+        // JsonLd::addImage('https://codecasts.com.br/img/logo.jpg');  
 
         return Inertia::render('Index', [
             'hero' => $hero,
@@ -109,4 +136,5 @@ class HomeController extends Controller
             'seo' => $seo,
         ]);
     }
+
 }
