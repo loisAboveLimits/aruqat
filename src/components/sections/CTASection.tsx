@@ -142,7 +142,7 @@ const CTASection = () => {
               <FaXTwitter size={20} />
             </a>
             <a href={settings?.social?.facebook || "#"} target="_blank" rel="noopener noreferrer" className="w-14 h-24 rounded-t-full rounded-b-none border border-white-400 border-b-0 flex items-start justify-center pt-5 text-[#9EC0FF] hover:text-white hover:border-white transition-colors">
-              <i class="fa-brands fa-whatsapp"></i>
+              <i className="fa-brands fa-whatsapp"></i>
             </a>
           </div>
 

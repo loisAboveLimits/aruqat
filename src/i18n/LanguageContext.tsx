@@ -19,16 +19,11 @@ const staticTranslations = { ar, en };
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [lang, setLang] = useState<Language>(() => {
-    if (typeof window !== 'undefined') {
-      const savedLang = localStorage.getItem('app_lang') as Language;
-      if (savedLang === 'ar' || savedLang === 'en') {
-        return savedLang;
-      }
-    }
-    return 'ar';
-  });
-  const { props } = usePage();
+
+    const { props, url } = usePage();
+
+    const lang: Language = url.startsWith('/en') ? 'en' : 'ar';
+
 
   const toggleLanguage = useCallback(() => {
     setLang(prev => {

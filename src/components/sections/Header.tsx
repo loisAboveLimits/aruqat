@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, usePage } from '@inertiajs/react';
+import { Link, usePage, router } from '@inertiajs/react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { Menu, X } from 'lucide-react';
 import logo from '@/assets/logo.svg';
@@ -17,12 +17,28 @@ const Header = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const switchLanguage = () => {
+    let newUrl = url;
+
+    if (lang === 'ar') {
+      // Arabic -> English
+      newUrl = url === '/' ? '/en' : `/en${url}`;
+    } else {
+      // English -> Arabic
+      newUrl = url.replace(/^\/en/, '') || '/';
+    }
+
+    router.visit(newUrl);
+  };
+
+  const localePrefix = lang === 'en' ? '/en' : '';
+
   const navLinks = [
-    { label: t.nav.home, href: '/' },
-    { label: t.nav.about, href: '/about-us' },
-    { label: t.nav.services, href: '/services' },
-    { label: t.nav.articles, href: '/blog' },
-    { label: t.nav.contact, href: '/contact' },
+    { label: t.nav.home, href: `${localePrefix}/` },
+    { label: t.nav.about, href: `${localePrefix}/about-us` },
+    { label: t.nav.services, href: `${localePrefix}/services` },
+    { label: t.nav.articles, href: `${localePrefix}/blog` },
+    { label: t.nav.contact, href: `${localePrefix}/contact` },
   ];
 
   return (
@@ -59,7 +75,7 @@ const Header = () => {
             );
           })}
           <button
-            onClick={toggleLanguage}
+            onClick={switchLanguage}
             className="text-primary-foreground/70 hover:text-primary-foreground text-sm font-semibold transition-colors"
           >
             {lang === 'ar' ? 'EN' : 'AR'}
@@ -93,7 +109,10 @@ const Header = () => {
               );
             })}
             <button
-              onClick={() => { toggleLanguage(); setMobileOpen(false); }}
+              onClick={() => {
+                switchLanguage();
+                setMobileOpen(false);
+            }}
               className="text-primary-foreground/70 text-sm font-semibold text-start"
             >
               {lang === 'ar' ? 'EN' : 'AR'}

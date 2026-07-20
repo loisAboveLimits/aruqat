@@ -12,6 +12,7 @@ use App\Models\BlogPost;
 use App\Models\SeoSetting;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
 use Artesaos\SEOTools\Facades\SEOMeta;
@@ -32,33 +33,54 @@ class HomeController extends Controller
         $about = null;
         $goal = null;
 
+        $locale = app()->getLocale();
+
+        //dd(app()->getLocale());
+
         if ($homePage) {
             $hero = [
                 'id' => $homePage->id,
-                'title' => $homePage->getTranslations('hero_title'),
-                'cta_label' => $homePage->getTranslations('hero_cta_label'),
+                'title' => $homePage->getTranslation('hero_title', $locale,false),
+                'cta_label' => $homePage->getTranslation('hero_cta_label', $locale,false),
                 'cta_url' => $homePage->hero_cta_url,
-                'secondary_cta_label' => $homePage->getTranslations('hero_secondary_cta_label'),
+                'secondary_cta_label' => $homePage->getTranslation('hero_secondary_cta_label', $locale,false),
                 'secondary_cta_url' => $homePage->hero_secondary_cta_url,
                 'background_image_url' => $homePage->getFirstMediaUrl('hero_background') ?: null,
             ];
 
             $about = [
                 'id' => $homePage->id,
-                'badge' => $homePage->getTranslations('about_badge'),
-                'description' => $homePage->getTranslations('about_description'),
-                'cta_label' => $homePage->getTranslations('about_cta_label'),
+                'badge' => $homePage->getTranslation('about_badge', $locale,false),
+                'description' => $homePage->getTranslation('about_description', $locale,false),
+                'cta_label' => $homePage->getTranslation('about_cta_label', $locale,false),
                 'cta_url' => $homePage->about_cta_url,
                 'office_image_url' => $homePage->getFirstMediaUrl('about_office') ?: null,
             ];
 
             $goal = [
                 'id' => $homePage->id,
-                'badge' => $homePage->getTranslations('goal_badge'),
-                'title' => $homePage->getTranslations('goal_title'),
-                'cta_label' => $homePage->getTranslations('goal_cta_label'),
+                'badge' => $homePage->getTranslation('goal_badge', $locale,false),
+                'title' => $homePage->getTranslation('goal_title', $locale,false),
+                'cta_label' => $homePage->getTranslation('goal_cta_label', $locale,false),
                 'cta_url' => $homePage->goal_cta_url,
                 'background_image_url' => $homePage->getFirstMediaUrl('goal_background') ?: null,
+            ];
+
+            $seoTools = [
+
+                'id' => $homePage->id,
+                'seo_title' => $homePage->getTranslation('seo_title', $locale,false),
+                'seo_description' => $homePage->getTranslation('seo_description', $locale,false),
+                'seo_keywords' => $homePage->getTranslation('seo_keywords', $locale,false),
+                'canonical_url' => $homePage->getTranslation('canonical_url', $locale,false),
+                'og_title' => $homePage->getTranslation('og_title', $locale,false),
+                'og_description' => $homePage->getTranslation('og_description', $locale,false),
+                'og_image' => $homePage->getFirstMediaUrl('og_image') ?: null,                
+                'twitter_title' => $homePage->getTranslation('twitter_title', $locale,false),
+                'twitter_description' => $homePage->getTranslation('twitter_description',$locale,false),
+                'twitter_image' => $homePage->getFirstMediaUrl('twitter_image') ?: null, 
+                'robots' => $homePage->getTranslation('robots', $locale,false),
+
             ];
         }
 
@@ -105,20 +127,21 @@ class HomeController extends Controller
             });
 
         $seo = SeoSetting::where('page', 'home')->first();
-    
+
+        
         /*SEO*/
-        SEOMeta::setTitle('Home');
-        SEOMeta::setDescription('This is my page description');
-        SEOMeta::setKeywords('asdasd,rtrtyrty,dfgdfg');
-        SEOMeta::setCanonical('https://codecasts.com.br/lesson');
+        SEOMeta::setTitle($seoTools['seo_title']);
+        SEOMeta::setDescription($seoTools['seo_description']);
+        SEOMeta::setKeywords($seoTools['seo_keywords']);
+        SEOMeta::setCanonical($seoTools['canonical_url']);
 
-        OpenGraph::setDescription('This is my page description');
-        OpenGraph::setTitle('Home');
-        OpenGraph::setUrl('http://current.url.com');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::setTitle($seoTools['og_title']);
+        OpenGraph::setDescription($seoTools['og_description']);
+        OpenGraph::addImage($seoTools['og_image']);
 
-        TwitterCard::setTitle('Homepage');
-        TwitterCard::setSite('@LuizVinicius73asdad');
+        TwitterCard::setTitle($seoTools['twitter_title']);
+        TwitterCard::setSite($seoTools['twitter_description']);
+        TwitterCard::addImage($seoTools['twitter_image']);
 
         // JsonLd::setTitle('Homepage');
         // JsonLd::setDescription('This is my page descriptionasdasd');

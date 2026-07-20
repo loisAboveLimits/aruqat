@@ -21,6 +21,15 @@ class AboutPage extends Model implements HasMedia
         'clients_content',
         'goals_title',
         'goals_content',
+        'seo_title',
+        'seo_description',
+        'seo_keywords',
+        'canonical_url',
+        'og_title',
+        'og_description',
+        'twitter_title',
+        'twitter_description',
+        'robots',        
         'is_active',
     ];
 
@@ -33,6 +42,15 @@ class AboutPage extends Model implements HasMedia
         'clients_content',
         'goals_title',
         'goals_content',
+        'seo_title',
+        'seo_description',
+        'seo_keywords',
+        'canonical_url',
+        'og_title',
+        'og_description',
+        'twitter_title',
+        'twitter_description',
+        'robots',        
     ];
 
     protected $casts = [

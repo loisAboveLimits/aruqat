@@ -26,6 +26,15 @@ class HomePage extends Model implements HasMedia
         'goal_title',
         'goal_cta_label',
         'goal_cta_url',
+        'seo_title',
+        'seo_description',
+        'seo_keywords',
+        'canonical_url',
+        'og_title',
+        'og_description',
+        'twitter_title',
+        'twitter_description',
+        'robots',
         'is_active',
     ];
 
@@ -39,7 +48,17 @@ class HomePage extends Model implements HasMedia
         'goal_badge',
         'goal_title',
         'goal_cta_label',
+        'seo_title',
+        'seo_description',
+        'seo_keywords',
+        'canonical_url',
+        'og_title',
+        'og_description',
+        'twitter_title',
+        'twitter_description',
+        'robots',
     ];
+
 
     protected $casts = [
         'is_active' => 'boolean',

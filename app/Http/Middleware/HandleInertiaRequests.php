@@ -38,6 +38,7 @@ class HandleInertiaRequests extends Middleware
         $settings = \App\Models\SiteSetting::first();
         
         return array_merge(parent::share($request), [
+            'locale' => app()->getLocale(),
             'settings' => $settings ? [
                 'id' => $settings->id,
                 'site_name' => $settings->getTranslations('site_name'),

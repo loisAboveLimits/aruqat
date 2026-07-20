@@ -3,23 +3,35 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', [HomeController::class, 'index']);
-
-use App\Http\Controllers\AboutController;
-
 Route::get('/about-us', [AboutController::class, 'index']);
-
-use App\Http\Controllers\ServiceController;
-
 Route::get('/services', [ServiceController::class, 'index']);
-
-use App\Http\Controllers\BlogController;
-
 Route::get('/blog', [BlogController::class, 'index']);
 Route::get('/blog/{id}', [BlogController::class, 'show']);
 
-use App\Http\Controllers\ContactController;
-
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+// Arabic (default)
+Route::middleware('locale')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/about-us', [AboutController::class, 'index'])->name('about-us');
+});
+
+// English
+Route::prefix('en')
+    ->middleware('locale')
+    ->group(function () {
+
+        Route::get('/', [HomeController::class, 'index'])->name('home.en');
+ 		Route::get('/about-us', [AboutController::class, 'index'])->name('about-us.en');
+    });
+
+
+
+

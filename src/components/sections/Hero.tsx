@@ -24,11 +24,11 @@ const Hero = () => {
 
       */}
 
-      <div class="banner-video absolute">
+      <div className="banner-video absolute">
 
-        <div class="desktop-view">
+        <div className="desktop-view">
 
-          <div class="ratio ratio-16x9">
+          <div className="ratio ratio-16x9">
 
             <video 
               autoPlay={true}
@@ -45,9 +45,9 @@ const Hero = () => {
 
         </div> 
 
-        <div class="mobile-view">
+        <div className="mobile-view">
           
-          <div class="ratio ratio-16x9">
+          <div className="ratio ratio-16x9">
 
             <video 
               autoPlay={true}
