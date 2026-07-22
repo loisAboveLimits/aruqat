@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {!! SEO::generate() !!} 
+        
 
         @php
             $settings = $page['props']['settings'] ?? null;
@@ -15,7 +15,7 @@
         @endphp
 
 
-        <title inertia>{{ $siteName }}</title>
+        <!-- <title inertia>{{ $siteName }}</title> -->
 
         <link rel="icon" type="{{ $favType }}" href="{{ $favicon }}">
 

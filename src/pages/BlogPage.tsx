@@ -15,10 +15,21 @@ const BlogPage = () => {
   const { t, lang, settings, localize } = useLanguage() as any;
   const { props } = usePage();
   const posts = (props.posts as any)?.data || [];
+  const seo = props.seo;
 
   return (
     <div className="min-h-screen">
-      <Head title={t.articles.title} />
+
+    <Head>
+        <title>{seo?.seo_title}</title>
+        <meta name="description" content={seo?.seo_description}/>
+        <meta name="keywords" content={seo?.seo_keywords}/>
+        <link rel="canonical" href={seo?.canonical_url} />
+        <meta property="og:title" content={seo?.seo_title} />
+        <meta property="og:description" content={seo?.og_description} />
+        <meta property="og:image" content={seo?.og_image} />
+    </Head>
+
       <Header />
 
       {/* Hero */}

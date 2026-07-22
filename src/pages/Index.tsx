@@ -11,11 +11,24 @@ import Team from '@/components/sections/Team';
 import Articles from '@/components/sections/Articles';
 import CTASection from '@/components/sections/CTASection';
 
+
+
 const Index = (props: any) => {
   const { t } = useLanguage();
+  const seo = props.seo;
   return (
     <div className="min-h-screen">
-      <Head title={t.nav.home} />
+
+    <Head>
+        <title>{seo?.seo_title}</title>
+        <meta name="description" content={seo?.seo_description}/>
+        <meta name="keywords" content={seo?.seo_keywords}/>
+        <link rel="canonical" href={seo?.canonical_url} />
+        <meta property="og:title" content={seo?.seo_title} />
+        <meta property="og:description" content={seo?.og_description} />
+        <meta property="og:image" content={seo?.og_image} />
+    </Head>
+
       <Header />
       <Hero {...props.hero} />
       <About {...props.about} />

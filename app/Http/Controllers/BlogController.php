@@ -19,6 +19,8 @@ class BlogController extends Controller
 {
     public function index()
     {
+        $locale = app()->getLocale();
+
         $posts = BlogPost::where('status', 'published')
             ->orderBy('published_at', 'desc')
             ->paginate(12)
@@ -29,22 +31,26 @@ class BlogController extends Controller
 
         $seo = SeoSetting::where('page', 'blog')->first();
 
-        SEOMeta::setTitle('Blogs');
-        SEOMeta::setDescription('This is my page description');
-        SEOMeta::setKeywords('asdasd,rtrtyrty,dfgdfg');
-        SEOMeta::setCanonical('https://codecasts.com.br/lesson');
+        $seoTools = [
 
-        OpenGraph::setDescription('This is my page description');
-        OpenGraph::setTitle('Home');
-        OpenGraph::setUrl('http://current.url.com');
-        OpenGraph::addProperty('type', 'articles');
+            'seo_title' => "asdasd",
+            'seo_description' => "sadasdasd",
+            'seo_keywords' => "",
+            'canonical_url' => "",
+            'og_title' => "",
+            'og_description' => "",
+            'og_image' => "",                
+            'twitter_title' => "",
+            'twitter_description' => "",
+            'twitter_image' => "", 
+            'robots' => "",
 
-        TwitterCard::setTitle('Homepage');
-        TwitterCard::setSite('@LuizVinicius73asdad');
+        ];        
+
 
         return Inertia::render('BlogPage', [
             'posts' => $posts,
-            'seo' => $seo,
+            'seo' => $seoTools,
         ]);
     }
 

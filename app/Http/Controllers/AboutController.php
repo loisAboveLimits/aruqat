@@ -58,6 +58,8 @@ class AboutController extends Controller
             ];
         }
 
+        //dd($seoTools);
+
         $stats = \App\Models\Statistic::where('is_active', true)->orderBy('sort_order')->get()->map(function($stat) {
             return [
                 'id' => $stat->id,
@@ -79,18 +81,18 @@ class AboutController extends Controller
 
         
         /*SEO*/
-        SEOMeta::setTitle($seoTools['seo_title']);
-        SEOMeta::setDescription($seoTools['seo_description']);
-        SEOMeta::setKeywords($seoTools['seo_keywords']);
-        SEOMeta::setCanonical($seoTools['canonical_url']);
+        // SEOMeta::setTitle($seoTools['seo_title']);
+        // SEOMeta::setDescription($seoTools['seo_description']);
+        // SEOMeta::setKeywords($seoTools['seo_keywords']);
+        // SEOMeta::setCanonical($seoTools['canonical_url']);
 
-        OpenGraph::setTitle($seoTools['og_title']);
-        OpenGraph::setDescription($seoTools['og_description']);
-        OpenGraph::addImage($seoTools['og_image']);
+        // OpenGraph::setTitle($seoTools['og_title']);
+        // OpenGraph::setDescription($seoTools['og_description']);
+        // OpenGraph::addImage($seoTools['og_image']);
 
-        TwitterCard::setTitle($seoTools['twitter_title']);
-        TwitterCard::setSite($seoTools['twitter_description']);
-        TwitterCard::addImage($seoTools['twitter_image']);
+        // TwitterCard::setTitle($seoTools['twitter_title']);
+        // TwitterCard::setSite($seoTools['twitter_description']);
+        // TwitterCard::addImage($seoTools['twitter_image']);
 
         // JsonLd::setTitle('Homepage');
         // JsonLd::setDescription('This is my page descriptionasdasd');
@@ -100,7 +102,7 @@ class AboutController extends Controller
             'about' => $about,
             'stats' => $stats,
             'team' => $team,
-            'seo' => $seo,
+            'seo' => $seoTools,
         ]);
     }
 }

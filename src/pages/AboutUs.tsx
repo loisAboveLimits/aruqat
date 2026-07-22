@@ -15,6 +15,7 @@ const AboutUs = () => {
   const { t, lang, settings, localize } = useLanguage() as any;
   const { props } = usePage();
   const aboutData = props.about as any;
+ 
   const [activeTab, setActiveTab] = useState<typeof tabs[number]>('vision');
 
   const heroTitle = (typeof aboutData?.hero_title === 'object' ? aboutData.hero_title[lang] : aboutData?.hero_title) || t.aboutPage.heroTitle;
@@ -27,9 +28,21 @@ const AboutUs = () => {
     { id: 'goals', title: localize(aboutData?.goals_title, t.aboutPage.tabs.milestones), content: localize(aboutData?.goals_content, t.aboutPage.tabContent.milestones) },
   ];
 
+ const seo = props.seo;
+
   return (
     <div className="min-h-screen">
-      <Head title={t.nav.about} />
+
+    <Head>
+        <title>{seo?.seo_title}</title>
+        <meta name="description" content={seo?.seo_description}/>
+        <meta name="keywords" content={seo?.seo_keywords}/>
+        <link rel="canonical" href={seo?.canonical_url} />
+        <meta property="og:title" content={seo?.seo_title} />
+        <meta property="og:description" content={seo?.og_description} />
+        <meta property="og:image" content={seo?.og_image} />
+    </Head>
+
       <Header />
 
       {/* Hero Section */}
