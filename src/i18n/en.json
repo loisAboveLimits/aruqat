@@ -57,6 +57,19 @@
     "badge": "Our Services",
     "title": "Comprehensive Legal Services with Professionalism",
     "allServices": "All Our Services",
+    "seo": {
+        "seo_title" : "Aruqat Al Netham Law Firm & Legal Consultancy | Services",
+        "seo_description" : "",
+        "seo_keywords" : "",
+        "canonical_url" : "",
+        "og_title" : "",
+        "og_description" : "",
+        "og_image" : "",
+        "twitter_title" : "",
+        "twitter_description" : "",
+        "twitter_image" : "",
+        "robots" : ""
+    },    
     "items": [
       { "title": "Legal Consultations", "icon": "MessageSquare", "description": "We provide specialized and comprehensive legal consultations across various legal fields. Our team of experienced lawyers and consultants delivers innovative legal solutions that meet our clients' needs and protect their interests." },
       { "title": "Annual Corporate Contracts", "icon": "FileText", "description": "We offer annual contracting services for companies and institutions, ensuring they receive continuous and integrated legal support throughout the year, including legal review, consultations, and contract management." },
@@ -92,7 +105,7 @@
     "title": "Blog",
     "readMore": "Read More",
     "seo": {
-        "seo_title" : "",
+        "seo_title" : "Aruqat Al Netham Law Firm & Legal Consultancy | Blog",
         "seo_description" : "",
         "seo_keywords" : "",
         "canonical_url" : "",
@@ -148,6 +161,19 @@
       "address": "Kingdom of Saudi Arabia - Jeddah - Al Shati District, The Headquarters Business Park Tower - 17th Floor - Office 1701",
       "phone": "Phone Number",
       "email": "Email Address"
+    },
+    "seo": {
+        "seo_title" : "Aruqat Al Netham Law Firm & Legal Consultancy | Contact Us",
+        "seo_description" : "",
+        "seo_keywords" : "",
+        "canonical_url" : "",
+        "og_title" : "",
+        "og_description" : "",
+        "og_image" : "",
+        "twitter_title" : "",
+        "twitter_description" : "",
+        "twitter_image" : "",
+        "robots" : ""
     }
   },
   "lang": "EN"

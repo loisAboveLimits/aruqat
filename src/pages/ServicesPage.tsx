@@ -25,9 +25,21 @@ const ServicesPage = () => {
     return <IconName size={38} strokeWidth={1.5} className={'text-[#9EC0FF]'} />;
   };
 
+  const seo = props.seo;
+
   return (
     <div className="min-h-screen">
-      <Head title={t.services.badge} />
+
+    <Head>
+        <title>{seo?.seo_title}</title>
+        <meta name="description" content={seo?.seo_description}/>
+        <meta name="keywords" content={seo?.seo_keywords}/>
+        <link rel="canonical" href={seo?.canonical_url} />
+        <meta property="og:title" content={seo?.seo_title} />
+        <meta property="og:description" content={seo?.og_description} />
+        <meta property="og:image" content={seo?.og_image} />
+    </Head>
+
       <Header />
 
       {/* Hero */}

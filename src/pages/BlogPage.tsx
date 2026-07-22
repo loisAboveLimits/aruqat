@@ -15,6 +15,7 @@ const BlogPage = () => {
   const { t, lang, settings, localize } = useLanguage() as any;
   const { props } = usePage();
   const posts = (props.posts as any)?.data || [];
+  
   const seo = props.seo;
 
   return (

@@ -57,6 +57,19 @@
     "badge": "خدماتــــنا",
     "title": "خدمات قانونية متكاملة باحتراف",
     "allServices": "جميع خدماتنا",
+    "seo": {
+        "seo_title" : "معك قانونـيًا في كل خطــــوة | خدمات",
+        "seo_description" : "",
+        "seo_keywords" : "",
+        "canonical_url" : "",
+        "og_title" : "",
+        "og_description" : "",
+        "og_image" : "",
+        "twitter_title" : "",
+        "twitter_description" : "",
+        "twitter_image" : "",
+        "robots" : ""
+    },    
     "items": [
       {
         "title": "الاستشارات القانونية",
@@ -124,7 +137,7 @@
     "title": "المدونــــة",
     "readMore": "قراءة المزيــــــــد",
     "seo": {
-        "seo_title" : "",
+        "seo_title" : "معك قانونـيًا في كل خطــــوة | مدونة",
         "seo_description" : "",
         "seo_keywords" : "",
         "canonical_url" : "",
@@ -180,7 +193,20 @@
       "address": "المملكة العربية السعودية - جدة - حي الشاطئ برج ذا هيد كوارترز بزنس بارك - الدور 17 - مكتب 1701",
       "phone": "رقم الهاتف",
       "email": "البريد الإلكتروني"
-    }
+    },
+    "seo": {
+        "seo_title" : "معك قانونـيًا في كل خطــــوة | اتصل بنا",
+        "seo_description" : "",
+        "seo_keywords" : "",
+        "canonical_url" : "",
+        "og_title" : "",
+        "og_description" : "",
+        "og_image" : "",
+        "twitter_title" : "",
+        "twitter_description" : "",
+        "twitter_image" : "",
+        "robots" : ""
+    }    
   },
   "lang": "AR"
 }

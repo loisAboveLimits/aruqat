@@ -7,6 +7,7 @@ use App\Models\BlogPost;
 use App\Models\SeoSetting;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
@@ -21,6 +22,11 @@ class BlogController extends Controller
     {
         $locale = app()->getLocale();
 
+        $translations = json_decode(
+            File::get(base_path("src/i18n/{$locale}.json")),
+            true
+        );
+
         $posts = BlogPost::where('status', 'published')
             ->orderBy('published_at', 'desc')
             ->paginate(12)
@@ -29,24 +35,27 @@ class BlogController extends Controller
                 return $post;
             });
 
-        $seo = SeoSetting::where('page', 'blog')->first();
+        //$seo = SeoSetting::where('page', 'blog')->first();
+
+        $seo = $translations['articles']['seo'];
 
         $seoTools = [
 
-            'seo_title' => "asdasd",
-            'seo_description' => "sadasdasd",
-            'seo_keywords' => "",
-            'canonical_url' => "",
-            'og_title' => "",
-            'og_description' => "",
-            'og_image' => "",                
-            'twitter_title' => "",
-            'twitter_description' => "",
-            'twitter_image' => "", 
-            'robots' => "",
+            'seo_title' => $seo['seo_title'],
+            'seo_description' => $seo['seo_description'],
+            'seo_keywords' => $seo['seo_keywords'],
+            'canonical_url' => $seo['canonical_url'],
+            'og_title' => $seo['og_title'],
+            'og_description' => $seo['og_description'],
+            'og_image' => $seo['og_image'],                
+            'twitter_title' => $seo['twitter_title'],
+            'twitter_description' => $seo['twitter_description'],
+            'twitter_image' => $seo['twitter_image'], 
+            'robots' => $seo['robots'],
 
         ];        
 
+        //dd($seoTools);
 
         return Inertia::render('BlogPage', [
             'posts' => $posts,
