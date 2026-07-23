@@ -21,6 +21,13 @@ class BlogPost extends Model implements HasMedia
         'status',
         'seo_title',
         'seo_description',
+        'seo_keywords',
+        'canonical_url',
+        'og_title',
+        'og_description',
+        'twitter_title',
+        'twitter_description',
+        'robots', 
     ];
 
     public $translatable = [
@@ -28,6 +35,13 @@ class BlogPost extends Model implements HasMedia
         'content',
         'seo_title',
         'seo_description',
+        'seo_keywords',
+        'canonical_url',
+        'og_title',
+        'og_description',
+        'twitter_title',
+        'twitter_description',
+        'robots', 
     ];
 
     protected $casts = [

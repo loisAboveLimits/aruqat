@@ -67,6 +67,8 @@ class BlogController extends Controller
     {
         // Try to find by slug first, then ID
         $post = BlogPost::where('slug', $id)->orWhere('id', $id)->firstOrFail();
+
+        $locale = app()->getLocale();
         
         if ($post->status !== 'published' && !auth()->check()) {
             abort(404);
@@ -84,10 +86,28 @@ class BlogController extends Controller
                 return $p;
             });
 
+            $seoTools = [
+
+                'id' => $post->id,
+                'seo_title' => $post->getTranslation('seo_title', $locale,false),
+                'seo_description' => $post->getTranslation('seo_description', $locale,false),
+                'seo_keywords' => $post->getTranslation('seo_keywords', $locale,false),
+                'canonical_url' => $post->getTranslation('canonical_url', $locale,false),
+                'og_title' => $post->getTranslation('og_title', $locale,false),
+                'og_description' => $post->getTranslation('og_description', $locale,false),
+                'og_image' => $post->getFirstMediaUrl('og_image') ?: null,                
+                'twitter_title' => $post->getTranslation('twitter_title', $locale,false),
+                'twitter_description' => $post->getTranslation('twitter_description',$locale,false),
+                'twitter_image' => $post->getFirstMediaUrl('twitter_image') ?: null, 
+                'robots' => $post->getTranslation('robots', $locale,false),
+
+            ];
+
 
         return Inertia::render('BlogDetail', [
             'post' => $post,
             'relatedPosts' => $relatedPosts,
+            'seo' => $seoTools,
         ]);
     }
 }

@@ -10,7 +10,7 @@ import "./index.css";
 const queryClient = new QueryClient();
 
 createInertiaApp({
-  title: (title) => title ? `${title} | أروقة النظام` : 'أروقة النظام',
+  title: (title) => title,
   resolve: async (name) => {
     const pages = import.meta.glob("./pages/**/*.tsx");
     const page = (await pages[`./pages/${name}.tsx`]()) as any;

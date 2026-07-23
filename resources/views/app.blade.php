@@ -4,8 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        
-
         @php
             $settings = $page['props']['settings'] ?? null;
             $locale = app()->getLocale();
@@ -15,7 +13,7 @@
         @endphp
 
 
-        <!-- <title inertia>{{ $siteName }}</title> -->
+        <title inertia></title> 
 
         <link rel="icon" type="{{ $favType }}" href="{{ $favicon }}">
 
