@@ -24,15 +24,16 @@
 
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
+        @if (config('services.google_analytics.id'))
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-125PY1JPT2"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google_analytics.id') }}"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', 'G-125PY1JPT2');
-        </script>        
+          gtag('config', '{{ config('services.google_analytics.id') }}');
+        </script>
+        @endif     
         
     </head>
     <body class="font-sans antialiased">
