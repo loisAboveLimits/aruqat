@@ -41,7 +41,7 @@ const BlogDetail = () => {
         <link rel="canonical" href={seo?.canonical_url} />
         <meta property="og:title" content={seo?.seo_title} />
         <meta property="og:description" content={seo?.og_description} />
-        <meta property="og:image" content={seo?.og_image} />
+        <meta name="robots" content="index, follow"/>
       </Head>
       <Header />
 
