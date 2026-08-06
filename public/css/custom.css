@@ -14,8 +14,26 @@
     display: none;
 }*/
 
-.banner-video{background-color: #000;}
+.banner-video{
+  background-color: #000;
+  min-width: 100%;
+  height: auto;
+}
 .banner-video video{opacity: 0.6;}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+}
+
+.video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 
 /*responsive*/

@@ -28,9 +28,16 @@ const Hero = () => {
 
         <div className="desktop-view">
 
-          <div className="ratio ratio-16x9">
+          <div className="video-container">
 
-            <video 
+            <iframe src="https://www.youtube.com/embed/ExdapzG2oko?autoplay=1&mute=1&loop=1&controls=0&playlist=ExdapzG2oko" 
+              width="100%"
+              frameBorder={0}  
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen 
+            /> 
+
+            {/*<video 
               autoPlay={true}
               loop={true}
               muted={true}
@@ -39,7 +46,7 @@ const Hero = () => {
 
               <source src={hero_video_desktop} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>             
+            </video> */}            
 
           </div>
 
@@ -47,7 +54,7 @@ const Hero = () => {
 
         <div className="mobile-view">
           
-          <div className="ratio ratio-16x9">
+          <div className="video-container">
 
             <video 
               autoPlay={true}

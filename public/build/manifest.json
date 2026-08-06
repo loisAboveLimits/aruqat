@@ -1,6 +1,6 @@
 {
-  "_CTASection-fx9QPaCQ.js": {
-    "file": "assets/CTASection-fx9QPaCQ.js",
+  "_CTASection-CYZIqZUs.js": {
+    "file": "assets/CTASection-CYZIqZUs.js",
     "name": "CTASection",
     "imports": [
       "src/main.tsx"
@@ -13,12 +13,12 @@
       "assets/tqnia_logo-4W7RIB6M.png"
     ]
   },
-  "_about_img-CBB4s68g.js": {
-    "file": "assets/about_img-CBB4s68g.js",
+  "_about_img-CFsod6wx.js": {
+    "file": "assets/about_img-CFsod6wx.js",
     "name": "about_img",
     "imports": [
       "src/main.tsx",
-      "_CTASection-fx9QPaCQ.js"
+      "_CTASection-CYZIqZUs.js"
     ],
     "assets": [
       "assets/team-1-ywB-uD0r.jpg",
@@ -118,10 +118,6 @@
     "file": "assets/tqnia_logo-4W7RIB6M.png",
     "src": "src/assets/tqnia_logo.png"
   },
-  "src/assets/videos/banner-video-desktop.mp4": {
-    "file": "assets/banner-video-desktop-kcuSqTpR.mp4",
-    "src": "src/assets/videos/banner-video-desktop.mp4"
-  },
   "src/assets/videos/banner-video-mobile.mp4": {
     "file": "assets/banner-video-mobile-DKn6Hjbf.mp4",
     "src": "src/assets/videos/banner-video-mobile.mp4"
@@ -131,7 +127,7 @@
     "src": "src/assets/vision-bg.png"
   },
   "src/main.tsx": {
-    "file": "assets/main-Bgl3R_Lj.js",
+    "file": "assets/main-cr0nF3og.js",
     "name": "main",
     "src": "src/main.tsx",
     "isEntry": true,
@@ -149,14 +145,14 @@
     ]
   },
   "src/pages/AboutUs.tsx": {
-    "file": "assets/AboutUs-ChLLG8C6.js",
+    "file": "assets/AboutUs-UbTzc43r.js",
     "name": "AboutUs",
     "src": "src/pages/AboutUs.tsx",
     "isDynamicEntry": true,
     "imports": [
       "src/main.tsx",
-      "_CTASection-fx9QPaCQ.js",
-      "_about_img-CBB4s68g.js",
+      "_CTASection-CYZIqZUs.js",
+      "_about_img-CFsod6wx.js",
       "_hero_bg-CnzjNTdq.js",
       "_hero_overlay-bx1sCaES.js"
     ],
@@ -166,13 +162,13 @@
     ]
   },
   "src/pages/BlogDetail.tsx": {
-    "file": "assets/BlogDetail-Vdg24P3w.js",
+    "file": "assets/BlogDetail-XGXOFCr2.js",
     "name": "BlogDetail",
     "src": "src/pages/BlogDetail.tsx",
     "isDynamicEntry": true,
     "imports": [
       "src/main.tsx",
-      "_CTASection-fx9QPaCQ.js",
+      "_CTASection-CYZIqZUs.js",
       "_hero_bg-CnzjNTdq.js",
       "_hero_overlay-bx1sCaES.js",
       "_article-3-C5ISTky6.js"
@@ -182,13 +178,13 @@
     ]
   },
   "src/pages/BlogPage.tsx": {
-    "file": "assets/BlogPage-CvRoO7V0.js",
+    "file": "assets/BlogPage-Cp4hMOA_.js",
     "name": "BlogPage",
     "src": "src/pages/BlogPage.tsx",
     "isDynamicEntry": true,
     "imports": [
       "src/main.tsx",
-      "_CTASection-fx9QPaCQ.js",
+      "_CTASection-CYZIqZUs.js",
       "_hero_bg-CnzjNTdq.js",
       "_hero_overlay-bx1sCaES.js",
       "_article-3-C5ISTky6.js"
@@ -198,13 +194,13 @@
     ]
   },
   "src/pages/ContactPage.tsx": {
-    "file": "assets/ContactPage-354uXBpB.js",
+    "file": "assets/ContactPage-DCvx09aT.js",
     "name": "ContactPage",
     "src": "src/pages/ContactPage.tsx",
     "isDynamicEntry": true,
     "imports": [
       "src/main.tsx",
-      "_CTASection-fx9QPaCQ.js",
+      "_CTASection-CYZIqZUs.js",
       "_hero_overlay-bx1sCaES.js"
     ],
     "assets": [
@@ -214,25 +210,24 @@
     ]
   },
   "src/pages/Index.tsx": {
-    "file": "assets/Index-BYnIPwXB.js",
+    "file": "assets/Index-DIlLLW8k.js",
     "name": "Index",
     "src": "src/pages/Index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "src/main.tsx",
-      "_CTASection-fx9QPaCQ.js",
-      "_about_img-CBB4s68g.js",
+      "_CTASection-CYZIqZUs.js",
+      "_about_img-CFsod6wx.js",
       "_article-3-C5ISTky6.js"
     ],
     "assets": [
-      "assets/banner-video-desktop-kcuSqTpR.mp4",
       "assets/banner-video-mobile-DKn6Hjbf.mp4",
       "assets/about_img-GgUE1QEe.png",
       "assets/vision-bg-Cnmru9We.png"
     ]
   },
   "src/pages/NotFound.tsx": {
-    "file": "assets/NotFound-TC3yYazK.js",
+    "file": "assets/NotFound-B_duSGZy.js",
     "name": "NotFound",
     "src": "src/pages/NotFound.tsx",
     "isDynamicEntry": true,
@@ -241,13 +236,13 @@
     ]
   },
   "src/pages/ServicesPage.tsx": {
-    "file": "assets/ServicesPage-B2HH9jFL.js",
+    "file": "assets/ServicesPage-CkdrwvDW.js",
     "name": "ServicesPage",
     "src": "src/pages/ServicesPage.tsx",
     "isDynamicEntry": true,
     "imports": [
       "src/main.tsx",
-      "_CTASection-fx9QPaCQ.js",
+      "_CTASection-CYZIqZUs.js",
       "_hero_bg-CnzjNTdq.js",
       "_hero_overlay-bx1sCaES.js"
     ],
